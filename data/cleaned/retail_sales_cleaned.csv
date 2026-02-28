@@ -1,0 +1,7 @@
+order_id,customer_name,gender,age,city,order_date,product,quantity,price,total_sales
+1001,Ali Khan,male,25.0,Delhi,2024-01-15,Laptop,1,55000,55000
+1004,Neha Verma,female,28.0,Delhi,2024-01-17,Headphones,3,2000,6000
+1005,Imran Ali,male,35.0,Mumbai,2024-01-18,Laptop,1,55000,55000
+1006,Pooja Singh,female,22.0,Chennai,2024-01-18,Phone,2,20000,40000
+1007,Arjun Das,male,29.0,Kolkata,2024-01-19,Tablet,1,30000,30000
+1012, ,female,26.0,Bangalore,2024-01-22,Headphones,2,2000,4000

@@ -1,0 +1,15 @@
+Order ID , Customer Name , Gender , Age , City , Order Date , Product , Quantity , Price , Total Sales
+1001,Ali Khan,male,25,Delhi,2024-01-15,Laptop,1,55000,55000
+1002,Sara Ahmed,Female, ,Mumbai,15/01/2024,Phone,2,20000,40000
+1003,Rahul Sharma,MALE,30,Bangalore,2024/01/16,Tablet,1,30000,30000
+1004,Neha Verma,female,28,Delhi,2024-01-17,Headphones,3,2000,6000
+1005,Imran Ali,Male,35,Mumbai,2024-01-18,Laptop,1,55000,55000
+1006,Pooja Singh,FEMALE,22,Chennai,2024-01-18,Phone,2,20000,40000
+1007,Arjun Das,male,29,Kolkata,2024-01-19,Tablet,1,30000,30000
+1008,Kavita Roy,female,,Delhi,2024-01-20,Phone,1,20000,20000
+1009,Raj Mehta,Male,120,Mumbai,2024-01-21,Laptop,1,55000,55000
+1010,Sara Ahmed,Female,27,Mumbai,2024-01-15,Phone,2,-20000,-40000
+1010,Sara Ahmed,Female,27,Mumbai,2024-01-15,Phone,2,-20000,-40000
+1011,Amit Patel,male,31,Delhi,2024-13-01,Tablet,1,30000,30000
+1012, ,female,26,Bangalore,2024-01-22,Headphones,2,2000,4000
+1013,Vikas Jain,Male,33,Delhi,2024-01-23,Laptop,1,999999,999999
