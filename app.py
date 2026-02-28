@@ -61,15 +61,22 @@ with c2:
     st.markdown("</div>", unsafe_allow_html=True)
 
 # ---------------- PROCESS ----------------
-if uploaded_file:
+if uploaded_file is not None:
 
     uploaded_file.seek(0)
 
-    if uploaded_file.name.endswith(".csv"):
-        df = pd.read_csv(uploaded_file)
-    else:
-        df = pd.read_excel(uploaded_file, engine="openpyxl")
+    try:
+        if uploaded_file.name.lower().endswith(".csv"):
+            df = pd.read_csv(uploaded_file)
+        elif uploaded_file.name.lower().endswith(".xlsx"):
+            df = pd.read_excel(uploaded_file, engine="openpyxl")
+        else:
+            st.error("Unsupported file type.")
+            st.stop()
 
+    except Exception as e:
+        st.error("File could not be read. Please upload a valid CSV or XLSX file.")
+        st.stop()
 
     page = st.radio("", ["Overview","Cleaning","Analytics","Validation"], horizontal=True)
 
