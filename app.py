@@ -63,10 +63,12 @@ with c2:
 # ---------------- PROCESS ----------------
 if uploaded_file:
 
+    file_bytes = uploaded_file.read()
+
     if uploaded_file.name.endswith(".csv"):
-        df = pd.read_csv(uploaded_file)
+        df = pd.read_csv(io.BytesIO(file_bytes))
     else:
-        df = pd.read_excel(uploaded_file, engine="openpyxl")
+        df = pd.read_excel(io.BytesIO(file_bytes), engine="openpyxl")
 
 
     page = st.radio("", ["Overview","Cleaning","Analytics","Validation"], horizontal=True)
