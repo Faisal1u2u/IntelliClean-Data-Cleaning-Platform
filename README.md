@@ -115,6 +115,7 @@ Cloud deployment using Streamlit Cloud
 GitHub version control integration
 
 AUTHOR
+
 Faisal Ahmad
 B.Tech CSE
 GitHub: https://github.com/Faisal1u2u
