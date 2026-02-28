@@ -66,7 +66,8 @@ if uploaded_file:
     if uploaded_file.name.endswith(".csv"):
         df = pd.read_csv(uploaded_file)
     else:
-        df = pd.read_excel(uploaded_file)
+        df = pd.read_excel(uploaded_file, engine="openpyxl")
+
 
     page = st.radio("", ["Overview","Cleaning","Analytics","Validation"], horizontal=True)
 
